@@ -1,5 +1,5 @@
-from math import remainder
 import random
+import PySimpleGUI as sg
 
 
 decisions = {
@@ -8,5 +8,12 @@ decisions = {
     '2' : 'Scissor'
 }
 
-while True:
-    computer = random.choice(list(decisions.values()))
+first_collumn = [
+    [
+        sg.Text("Escolha sua opção"),
+        sg.Button("Rock"),
+        sg.Button("Paper"),
+        sg.Button("Scissor")
+    
+    ]
+]
